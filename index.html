@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <style>
+        body {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-top: 20px;
+            margin-bottom: 150px;
+            font-size: 14px;
+        }
+
+        .glink {
+            color: rgba(0,0,0,0.87);
+            text-decoration: none;
+            margin-right: 15px;
+
+        }
+
+        .glink:hover {text-decoration: underline;}
+
+        .app img {
+            width:20px;
+            height: 20px;
+            opacity: 0.5;
+            margin-right: 15px;
+        }
+
+        .app img:hover {
+            opacity: 1;
+        }
+
+        .sign-in {
+            background-color: rgb(30, 126, 252);
+            color:white;
+            border: none;
+            padding: 10px;
+            font-size: 14px;
+            margin-right: 15px;
+        }
+
+        .sign-in:focus {
+            outline: none;
+        }
+
+        .sign-in:active {
+            background-color: rgb(52, 30, 252);
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 310px;
+        }
+        
+        .search-box{
+            background: transparent;
+            display: flex;
+            height: 45px;
+            width: 650px;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 50px;
+            border: 1px solid #d3d3d3;
+            margin-bottom: 30px;
+        }
+
+        .search-box:hover{
+            box-shadow: 0px 0px 10px #cecece;
+        }
+
+        .search-button{
+            background-color: transparent;
+        }
+
+        .search-button img{
+            margin-left: 20px;
+            width: 20px;
+            opacity: 0.5;
+        }
+
+        .search-form{
+            background-color: transparent;
+            border: none;
+            color: black;
+            height: 30px;
+            font-size: 20px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+    
+        .search-form :focus{
+            outline: none;
+        }
+        
+        .search-voice{
+            background-color: transparent;
+        }
+
+        .search-voice img{
+            margin-left: 290px;
+            width: 15px;
+            opacity: 0.5;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+        
+        .buttons {
+            font-size: 16px;
+            padding: 10px;
+            width: 155px;
+            margin-left: 15px;
+            border: none;
+            background-color: #F2F2F2;
+            border: 2px solid #f2f2f2;
+            color: #888888;
+            border-radius: 5px;
+        }
+
+        .buttons:hover {
+            border: 2px solid #b3b1b1; 
+            color: #505050
+        }
+
+        .buttons:focus {
+            outline: none;
+        }
+
+        .buttons:active {
+            border: 2px solid rgb(83, 137, 255);
+        }
+
+        #footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #F2F2F2;
+            border-top: 1px solid rgb(207, 207, 207);
+        }
+
+        .left {
+            float: left;
+            padding: 10px 10px 10px 20px;
+        }
+
+        .right {
+            float: right;
+            padding: 10px 20px 10px 10px;
+
+        }
+
+        li {
+            display: inline;
+        }
+
+    </style>
+       
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class= "glink">Gmail</a>
+        <a href="#" class= "glink">Images</a>
+        <a href="#" class= "app"><img src="https://image.flaticon.com/icons/png/512/60/60991.png"></a>
+        <button class=sign-in><strong>Sign in</strong></button>
+    </nav>
+
+    <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+    </div>
+
+    <div class="search-box">
+        <div class="search-button"> <img src="https://www.clipartmax.com/png/full/8-88862_bobcat-clipart.png"> </div>
+        <div class="search-form"> <input type='text' class="search-form"> </div>
+        <div class="search-voice"> <img src="https://www.clipartmax.com/png/full/104-1040790_microphone-clipart-no-background.png"> </div>
+    </div>
+
+    <div class="button-container">
+        <a href="#"><button class="buttons">Google Search</button></a>
+        <a href="#"><button class="buttons">I'm Feeling Lucky </button></a>
+    </div>
+    
+    <footer id="footer">
+        <li><a href="#" class= "glink left">Advertising</a></li>
+        <li><a href="#" class= "glink left">Business</a></li>
+        <li><a href="#" class= "glink left">About</a></li>
+        <li><a href="#" class= "glink left">How Search Work</a></li>
+        <li><a href="#" class= "glink right">Settings</a></li>
+        <li><a href="#" class= "glink right">Term</a></li>
+        <li><a href="#" class= "glink right">Privacy</a></li>
+    </footer>
+
+</body>
+</html>
